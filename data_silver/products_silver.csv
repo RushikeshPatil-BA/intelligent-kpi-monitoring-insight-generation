@@ -1,0 +1,501 @@
+product_id,category,base_unit_price_gbp
+20000,Accessories,5.64
+20001,Craft,5.85
+20002,Home & Gift,14.53
+20003,Stationery,5.27
+20004,Kitchen,9.4
+20005,Toys,38.11
+20006,Seasonal,12.55
+20007,Kitchen,14.46
+20008,Accessories,5.87
+20009,Home & Gift,5.4
+20010,Toys,14.85
+20011,Decor,8.66
+20012,Toys,17.94
+20013,Kitchen,10.71
+20014,Home & Gift,59.04
+20015,Stationery,7.88
+20016,Kitchen,12.12
+20017,Toys,6.71
+20018,Accessories,17.57
+20019,Seasonal,13.07
+20020,Decor,6.48
+20021,Decor,8.95
+20022,Stationery,20.82
+20023,Home & Gift,19.61
+20024,Decor,5.17
+20025,Stationery,8.31
+20026,Toys,26.07
+20027,Home & Gift,9.64
+20028,Seasonal,11.49
+20029,Stationery,17.52
+20030,Home & Gift,5.39
+20031,Kitchen,6.55
+20032,Accessories,8.92
+20033,Stationery,19.15
+20034,Accessories,17.46
+20035,Kitchen,15.03
+20036,Toys,9.78
+20037,Toys,18.44
+20038,Home & Gift,9.72
+20039,Stationery,14.0
+20040,Decor,16.54
+20041,Home & Gift,24.49
+20042,Craft,10.19
+20043,Home & Gift,8.75
+20044,Toys,20.04
+20045,Seasonal,20.82
+20046,Decor,7.99
+20047,Home & Gift,6.03
+20048,Home & Gift,19.29
+20049,Seasonal,4.61
+20050,Stationery,4.5
+20051,Seasonal,9.17
+20052,Decor,10.5
+20053,Home & Gift,5.87
+20054,Decor,11.14
+20055,Home & Gift,11.4
+20056,Decor,7.84
+20057,Craft,27.57
+20058,Seasonal,12.37
+20059,Craft,17.54
+20060,Decor,4.82
+20061,Home & Gift,4.8
+20062,Home & Gift,12.55
+20063,Home & Gift,25.21
+20064,Toys,6.02
+20065,Seasonal,10.72
+20066,Kitchen,5.38
+20067,Seasonal,6.96
+20068,Toys,10.99
+20069,Home & Gift,7.8
+20070,Stationery,5.19
+20071,Craft,5.13
+20072,Toys,3.88
+20073,Stationery,12.66
+20074,Home & Gift,13.45
+20075,Craft,13.41
+20076,Stationery,6.33
+20077,Seasonal,16.49
+20078,Home & Gift,14.2
+20079,Home & Gift,10.01
+20080,Accessories,9.22
+20081,Seasonal,7.21
+20082,Seasonal,10.98
+20083,Stationery,22.39
+20084,Craft,17.62
+20085,Kitchen,8.77
+20086,Craft,13.06
+20087,Home & Gift,5.75
+20088,Toys,14.37
+20089,Stationery,6.58
+20090,Accessories,14.09
+20091,Accessories,44.02
+20092,Kitchen,7.5
+20093,Home & Gift,43.01
+20094,Home & Gift,12.75
+20095,Home & Gift,6.86
+20096,Decor,6.7
+20097,Stationery,32.54
+20098,Home & Gift,12.76
+20099,Toys,7.52
+20100,Home & Gift,9.01
+20101,Craft,12.37
+20102,Stationery,9.93
+20103,Craft,11.86
+20104,Seasonal,24.21
+20105,Kitchen,5.67
+20106,Kitchen,13.77
+20107,Seasonal,9.62
+20108,Seasonal,7.77
+20109,Home & Gift,17.05
+20110,Decor,4.8
+20111,Toys,3.06
+20112,Toys,11.16
+20113,Toys,9.31
+20114,Seasonal,5.07
+20115,Toys,4.24
+20116,Toys,26.19
+20117,Home & Gift,12.57
+20118,Toys,10.07
+20119,Home & Gift,29.89
+20120,Decor,16.63
+20121,Stationery,24.16
+20122,Craft,5.53
+20123,Seasonal,5.43
+20124,Accessories,13.58
+20125,Craft,12.27
+20126,Stationery,18.63
+20127,Kitchen,4.41
+20128,Home & Gift,14.18
+20129,Home & Gift,16.36
+20130,Toys,15.93
+20131,Seasonal,8.14
+20132,Decor,12.93
+20133,Stationery,6.77
+20134,Accessories,8.62
+20135,Stationery,5.92
+20136,Home & Gift,6.83
+20137,Home & Gift,8.84
+20138,Kitchen,7.8
+20139,Kitchen,6.83
+20140,Stationery,5.21
+20141,Home & Gift,26.59
+20142,Kitchen,7.77
+20143,Decor,11.76
+20144,Home & Gift,4.14
+20145,Accessories,19.66
+20146,Seasonal,10.84
+20147,Kitchen,7.99
+20148,Home & Gift,8.02
+20149,Craft,15.41
+20150,Kitchen,2.28
+20151,Toys,6.61
+20152,Decor,9.4
+20153,Decor,9.34
+20154,Accessories,34.91
+20155,Decor,8.42
+20156,Home & Gift,16.36
+20157,Accessories,24.68
+20158,Stationery,13.95
+20159,Decor,7.12
+20160,Toys,5.25
+20161,Home & Gift,14.48
+20162,Toys,22.7
+20163,Accessories,13.1
+20164,Kitchen,18.48
+20165,Accessories,36.45
+20166,Home & Gift,15.16
+20167,Home & Gift,5.75
+20168,Kitchen,10.23
+20169,Toys,19.79
+20170,Seasonal,8.81
+20171,Craft,21.18
+20172,Seasonal,9.65
+20173,Toys,11.79
+20174,Kitchen,8.37
+20175,Decor,10.8
+20176,Seasonal,11.09
+20177,Decor,4.46
+20178,Stationery,8.0
+20179,Accessories,5.38
+20180,Home & Gift,8.14
+20181,Accessories,6.7
+20182,Decor,16.54
+20183,Decor,16.64
+20184,Home & Gift,13.2
+20185,Decor,5.29
+20186,Home & Gift,9.5
+20187,Kitchen,5.09
+20188,Seasonal,9.27
+20189,Kitchen,13.79
+20190,Stationery,16.38
+20191,Seasonal,12.63
+20192,Seasonal,18.71
+20193,Kitchen,11.36
+20194,Kitchen,8.87
+20195,Accessories,15.44
+20196,Toys,15.69
+20197,Home & Gift,7.67
+20198,Kitchen,12.06
+20199,Accessories,8.61
+20200,Stationery,3.65
+20201,Home & Gift,12.43
+20202,Decor,5.22
+20203,Decor,11.75
+20204,Seasonal,4.63
+20205,Accessories,6.96
+20206,Craft,8.03
+20207,Kitchen,18.19
+20208,Stationery,7.64
+20209,Seasonal,5.83
+20210,Decor,11.97
+20211,Seasonal,8.95
+20212,Home & Gift,14.81
+20213,Decor,6.01
+20214,Accessories,11.08
+20215,Toys,34.29
+20216,Craft,8.85
+20217,Accessories,10.95
+20218,Decor,4.35
+20219,Craft,6.51
+20220,Home & Gift,12.55
+20221,Accessories,8.46
+20222,Toys,13.56
+20223,Decor,12.34
+20224,Decor,5.16
+20225,Decor,16.57
+20226,Accessories,5.36
+20227,Accessories,6.8
+20228,Stationery,11.19
+20229,Toys,21.83
+20230,Home & Gift,6.04
+20231,Decor,10.74
+20232,Seasonal,10.78
+20233,Seasonal,13.86
+20234,Stationery,18.03
+20235,Seasonal,8.15
+20236,Toys,16.54
+20237,Craft,19.4
+20238,Decor,24.34
+20239,Kitchen,12.82
+20240,Decor,10.79
+20241,Home & Gift,7.87
+20242,Home & Gift,4.81
+20243,Seasonal,8.68
+20244,Accessories,10.55
+20245,Home & Gift,9.44
+20246,Home & Gift,13.45
+20247,Kitchen,4.82
+20248,Home & Gift,9.11
+20249,Toys,27.04
+20250,Kitchen,16.41
+20251,Craft,13.57
+20252,Stationery,12.13
+20253,Home & Gift,8.31
+20254,Home & Gift,4.15
+20255,Home & Gift,12.54
+20256,Accessories,2.93
+20257,Toys,8.48
+20258,Home & Gift,9.96
+20259,Craft,7.98
+20260,Accessories,29.54
+20261,Home & Gift,24.83
+20262,Stationery,16.72
+20263,Decor,6.28
+20264,Seasonal,26.07
+20265,Craft,13.59
+20266,Home & Gift,6.23
+20267,Accessories,10.14
+20268,Home & Gift,16.11
+20269,Stationery,7.39
+20270,Accessories,10.7
+20271,Accessories,11.68
+20272,Home & Gift,5.75
+20273,Home & Gift,8.71
+20274,Accessories,5.97
+20275,Home & Gift,15.4
+20276,Stationery,6.33
+20277,Home & Gift,11.54
+20278,Home & Gift,4.98
+20279,Decor,5.66
+20280,Home & Gift,5.52
+20281,Kitchen,8.63
+20282,Seasonal,10.92
+20283,Home & Gift,11.97
+20284,Seasonal,4.11
+20285,Stationery,9.17
+20286,Decor,6.85
+20287,Accessories,13.03
+20288,Accessories,8.72
+20289,Toys,9.58
+20290,Decor,6.87
+20291,Seasonal,23.63
+20292,Toys,5.25
+20293,Home & Gift,8.17
+20294,Home & Gift,10.53
+20295,Stationery,8.8
+20296,Stationery,6.81
+20297,Craft,4.03
+20298,Craft,7.06
+20299,Home & Gift,6.17
+20300,Craft,23.09
+20301,Accessories,30.95
+20302,Kitchen,9.72
+20303,Craft,4.94
+20304,Accessories,14.43
+20305,Kitchen,6.11
+20306,Home & Gift,7.58
+20307,Stationery,7.28
+20308,Decor,7.77
+20309,Home & Gift,8.35
+20310,Home & Gift,5.17
+20311,Stationery,7.02
+20312,Kitchen,16.61
+20313,Toys,9.81
+20314,Craft,10.62
+20315,Toys,3.27
+20316,Decor,16.02
+20317,Kitchen,7.08
+20318,Kitchen,17.5
+20319,Home & Gift,10.77
+20320,Stationery,7.53
+20321,Decor,4.31
+20322,Accessories,29.59
+20323,Toys,14.9
+20324,Decor,15.36
+20325,Decor,24.76
+20326,Home & Gift,11.16
+20327,Seasonal,19.61
+20328,Accessories,7.85
+20329,Decor,14.42
+20330,Home & Gift,7.28
+20331,Stationery,7.75
+20332,Toys,10.47
+20333,Stationery,5.29
+20334,Home & Gift,11.76
+20335,Seasonal,8.53
+20336,Kitchen,3.69
+20337,Home & Gift,7.93
+20338,Kitchen,8.39
+20339,Home & Gift,15.28
+20340,Toys,11.5
+20341,Accessories,20.57
+20342,Decor,12.94
+20343,Stationery,7.56
+20344,Decor,9.69
+20345,Decor,8.38
+20346,Seasonal,12.73
+20347,Craft,10.28
+20348,Stationery,7.28
+20349,Home & Gift,10.02
+20350,Decor,12.56
+20351,Kitchen,6.03
+20352,Toys,11.69
+20353,Home & Gift,4.53
+20354,Home & Gift,17.34
+20355,Home & Gift,12.98
+20356,Home & Gift,22.53
+20357,Craft,5.71
+20358,Stationery,17.58
+20359,Decor,15.92
+20360,Home & Gift,9.11
+20361,Stationery,8.26
+20362,Decor,5.8
+20363,Home & Gift,5.09
+20364,Stationery,6.85
+20365,Decor,5.32
+20366,Home & Gift,22.15
+20367,Home & Gift,4.71
+20368,Craft,10.75
+20369,Toys,12.4
+20370,Seasonal,11.93
+20371,Home & Gift,12.46
+20372,Stationery,16.01
+20373,Toys,7.98
+20374,Seasonal,10.42
+20375,Stationery,8.61
+20376,Decor,19.13
+20377,Accessories,28.5
+20378,Kitchen,5.49
+20379,Toys,3.61
+20380,Seasonal,13.26
+20381,Accessories,17.03
+20382,Home & Gift,26.54
+20383,Decor,14.42
+20384,Kitchen,20.04
+20385,Craft,22.87
+20386,Craft,20.75
+20387,Home & Gift,15.5
+20388,Toys,5.25
+20389,Kitchen,9.93
+20390,Kitchen,11.59
+20391,Decor,9.49
+20392,Home & Gift,9.79
+20393,Seasonal,21.84
+20394,Craft,6.83
+20395,Craft,14.87
+20396,Home & Gift,11.68
+20397,Craft,6.5
+20398,Home & Gift,5.82
+20399,Kitchen,4.26
+20400,Stationery,12.72
+20401,Seasonal,9.66
+20402,Home & Gift,6.6
+20403,Stationery,3.9
+20404,Stationery,12.38
+20405,Decor,9.14
+20406,Kitchen,6.98
+20407,Accessories,6.16
+20408,Seasonal,8.85
+20409,Toys,12.62
+20410,Home & Gift,8.46
+20411,Home & Gift,5.51
+20412,Toys,9.69
+20413,Craft,16.82
+20414,Stationery,10.18
+20415,Seasonal,10.32
+20416,Decor,8.48
+20417,Decor,6.39
+20418,Stationery,6.29
+20419,Craft,4.35
+20420,Seasonal,18.0
+20421,Kitchen,12.57
+20422,Accessories,10.39
+20423,Stationery,11.56
+20424,Decor,11.82
+20425,Seasonal,6.91
+20426,Accessories,8.48
+20427,Decor,7.87
+20428,Seasonal,35.01
+20429,Home & Gift,16.61
+20430,Stationery,10.85
+20431,Decor,19.75
+20432,Seasonal,18.54
+20433,Decor,5.0
+20434,Toys,8.92
+20435,Kitchen,9.89
+20436,Decor,13.54
+20437,Accessories,8.92
+20438,Toys,9.49
+20439,Home & Gift,7.92
+20440,Decor,16.85
+20441,Accessories,4.85
+20442,Toys,8.06
+20443,Kitchen,3.97
+20444,Home & Gift,5.96
+20445,Toys,11.69
+20446,Home & Gift,11.8
+20447,Home & Gift,8.53
+20448,Decor,17.5
+20449,Toys,19.63
+20450,Decor,9.63
+20451,Kitchen,11.3
+20452,Home & Gift,7.95
+20453,Toys,13.65
+20454,Home & Gift,5.49
+20455,Seasonal,24.48
+20456,Decor,17.64
+20457,Accessories,5.48
+20458,Accessories,6.72
+20459,Decor,12.31
+20460,Accessories,8.42
+20461,Kitchen,13.1
+20462,Accessories,8.33
+20463,Toys,21.38
+20464,Home & Gift,10.02
+20465,Accessories,33.46
+20466,Accessories,13.48
+20467,Stationery,5.08
+20468,Craft,28.31
+20469,Home & Gift,17.28
+20470,Accessories,12.06
+20471,Craft,13.78
+20472,Stationery,5.5
+20473,Decor,4.05
+20474,Decor,9.77
+20475,Accessories,19.87
+20476,Craft,12.16
+20477,Seasonal,23.44
+20478,Kitchen,19.31
+20479,Seasonal,10.08
+20480,Toys,18.03
+20481,Stationery,21.36
+20482,Home & Gift,9.58
+20483,Toys,8.96
+20484,Decor,10.7
+20485,Craft,2.99
+20486,Craft,11.48
+20487,Home & Gift,14.3
+20488,Kitchen,10.72
+20489,Kitchen,11.85
+20490,Home & Gift,9.76
+20491,Kitchen,3.67
+20492,Toys,22.9
+20493,Craft,8.3
+20494,Stationery,7.32
+20495,Decor,19.67
+20496,Decor,16.27
+20497,Accessories,11.43
+20498,Home & Gift,14.65
+20499,Stationery,5.6
