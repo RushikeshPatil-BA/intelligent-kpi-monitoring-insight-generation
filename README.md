@@ -1,4 +1,4 @@
-# intelligent-kpi-monitoring-insight-generation
+# Intelligent-kpi-monitoring-insight-generation
 MSc Business Analytics dissertation project developing a hybrid anomaly detection and insight generation system for SME KPI monitoring using Python, Power BI, Streamlit, and Isolation Forest.
 # Intelligent KPI Monitoring and Insight Generation System for SMEs
 
