@@ -1,0 +1,7 @@
+file,rows,columns
+customers.csv,8000,4
+products.csv,500,3
+orders.csv,141085,8
+order_items.csv,369536,5
+marketing_spend_daily.csv,731,7
+web_sessions_daily.csv,731,5
