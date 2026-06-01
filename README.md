@@ -108,7 +108,7 @@ The project includes the following dashboards:
 
 Screenshots are available in:
 
-- [View Streamlit Documentation](https://github.com/RushikeshPatil-BA/intelligent-kpi-monitoring-insight-generation/tree/main/docs/powerbi)
+- [View Power-BI screenshot](https://github.com/RushikeshPatil-BA/intelligent-kpi-monitoring-insight-generation/tree/main/docs/powerbi)
 
 ## Streamlit Prototype
 
@@ -121,7 +121,7 @@ The prototype provides:
 
 Screenshots are available in:
 
-- [View Streamlit Documentation](https://github.com/RushikeshPatil-BA/intelligent-kpi-monitoring-insight-generation/tree/main/docs/streamlit)
+- [View Streamlit screenshoot](https://github.com/RushikeshPatil-BA/intelligent-kpi-monitoring-insight-generation/tree/main/docs/streamlit)
 
 ## Evaluation Framework
 
