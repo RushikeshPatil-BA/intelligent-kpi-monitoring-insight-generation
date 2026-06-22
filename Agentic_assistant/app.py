@@ -9,7 +9,7 @@ from src.analytics import compare_periods, channel_contribution, confidence_scor
 st.set_page_config(page_title="Insight-to-Action Assistant", layout="wide")
 
 # ---- UPDATED ----
-PROJECT_ROOT = r"C:\Users\dell\Desktop\Documents for UK\dissertation_project"
+PROJECT_ROOT = r"C:\Users\Admin\OneDrive\UK Docs\intelligent-kpi-monitoring-insight-generation-main"
 GOLD_DIR = os.path.join(PROJECT_ROOT, "data_gold")
 DOCS_DIR = os.path.join(PROJECT_ROOT, "docs")
 
