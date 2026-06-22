@@ -76,7 +76,7 @@ METRIC_MAP = {
     "Avg Shipping Days": "avg_shipping_days",
 }
 
-st.title("Insight-to-Action Assistant (Phase 5 Prototype)")
+st.title("Insight-to-Action Assistant")
 st.caption("Alert-driven assistant: Summary → Evidence → Drivers → Actions → Confidence.")
 
 with st.sidebar:
