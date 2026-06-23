@@ -144,6 +144,20 @@ with left:
     )
 
     st.info("Select an alert below to generate insights and recommendations.")
+chosen = None
+
+if len(alerts_view) > 0:
+    chosen_idx = st.selectbox(
+        "Choose an alert to generate an insight:",
+        alerts_view.index.tolist(),
+        format_func=lambda i:
+            f"{alerts_view.loc[i,'date'].date()} | "
+            f"{alerts_view.loc[i,'metric']} | "
+            f"{alerts_view.loc[i,'severity']} | "
+            f"{alerts_view.loc[i,'method']}"
+    )
+
+    chosen = alerts_view.loc[chosen_idx]
 
 with right:
     st.subheader("Generated Insight")
