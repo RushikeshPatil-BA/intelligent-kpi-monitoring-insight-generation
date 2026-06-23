@@ -109,7 +109,7 @@ left, right = st.columns([1.25, 1])
 with left:
     st.subheader("Alert Summary")
 
-    c1, c2, c3 = st.columns(3)
+    c1, c2, c3, c4 = st.columns(4)
 
     c1.metric(
         "High Alerts",
@@ -122,6 +122,11 @@ with left:
     )
 
     c3.metric(
+        "Low Alerts",
+        len(alerts_view[alerts_view["severity"]=="LOW"])
+    )
+
+    c4.metric(
         "Total Alerts",
         len(alerts_view)
     )
@@ -139,15 +144,6 @@ with left:
     )
 
     st.info("Select an alert below to generate insights and recommendations.")
-
-chosen = None
-if len(alerts_view) > 0:
-    chosen_idx = st.selectbox(
-        "Choose an alert to generate an insight:",
-        alerts_view.index.tolist(),
-        format_func=lambda i: f"{alerts_view.loc[i,'date'].date()} | {alerts_view.loc[i,'metric']} | {alerts_view.loc[i,'severity']} | {alerts_view.loc[i,'method']}"
-    )
-    chosen = alerts_view.loc[chosen_idx]
 
 with right:
     st.subheader("Generated Insight")
