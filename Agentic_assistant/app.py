@@ -191,15 +191,14 @@ with right:
                  f"({chosen['method']}). Direction: **{direction}**.")
 
         st.markdown("### Evidence")
-
         st.json({
             "Current period": f"{cur_start.date()} → {cur_end.date()}",
             "Baseline period": f"{base_start.date()} → {base_end.date()}",
             "Current value": comp.current_value,
             "Baseline value": comp.baseline_value,
             "% change": comp.pct_change,
-            "z_score": "N/A" if pd.isna(chosen.get("z_score")) else round(float(chosen.get("z_score")), 2),
-            "pct_change (day-level)": "N/A" if pd.isna(chosen.get("pct_change")) else f"{float(chosen.get('pct_change')):.2%}",
+            "z_score (if available)": chosen.get("z_score", np.nan),
+            "pct_change (day-level, if available)": chosen.get("pct_change", np.nan),
             "Agreement (RULES+IFOREST same day/metric)": agreement,
             "Confidence (0-100)": conf,
         })
