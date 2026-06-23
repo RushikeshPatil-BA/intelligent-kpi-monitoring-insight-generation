@@ -83,7 +83,7 @@ with st.sidebar:
     st.header("Filters")
     metric_name = st.selectbox("Metric", list(METRIC_MAP.keys()))
     methods = st.multiselect("Method", ["RULES", "IFOREST"], default=["RULES","IFOREST"])
-    severities = st.multiselect("Severity", ["HIGH", "MEDIUM", "LOW"], default=["HIGH","MEDIUM"])
+    severities = st.multiselect("Severity", ["HIGH", "MEDIUM", "LOW"], default=["HIGH","MEDIUM","LOW"])
 
     min_d = daily["date"].min().date()
     max_d = daily["date"].max().date()
