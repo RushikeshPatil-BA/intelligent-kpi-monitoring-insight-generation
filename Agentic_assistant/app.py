@@ -107,9 +107,38 @@ alerts_view = alerts[
 left, right = st.columns([1.25, 1])
 
 with left:
-    st.subheader("Alerts (filtered)")
-    st.dataframe(alerts_view.head(200), use_container_width=True, height=520)
-    st.info("Tip: Filter Severity=HIGH and narrow dates for quick review.")
+    st.subheader("Alert Summary")
+
+    c1, c2, c3 = st.columns(3)
+
+    c1.metric(
+        "High Alerts",
+        len(alerts_view[alerts_view["severity"]=="HIGH"])
+    )
+
+    c2.metric(
+        "Medium Alerts",
+        len(alerts_view[alerts_view["severity"]=="MEDIUM"])
+    )
+
+    c3.metric(
+        "Total Alerts",
+        len(alerts_view)
+    )
+
+    st.markdown("### Alert Distribution")
+    st.bar_chart(alerts_view["severity"].value_counts())
+
+    st.markdown("### Recent Alerts")
+
+    st.dataframe(
+        alerts_view[
+            ["date","metric","severity","method"]
+        ].head(10),
+        use_container_width=True
+    )
+
+    st.info("Select an alert below to generate insights and recommendations.")
 
 chosen = None
 if len(alerts_view) > 0:
