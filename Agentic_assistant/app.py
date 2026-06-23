@@ -172,7 +172,7 @@ with right:
     if pd.notna(pct_day):
     evidence["Daily % Change"] = f"{float(pct_day):.2%}"
 
-st.json(evidence)
+    st.json(evidence)
 
         st.markdown("### Likely drivers")
         if metric_name in ["Revenue", "Orders", "CAC Proxy"]:
