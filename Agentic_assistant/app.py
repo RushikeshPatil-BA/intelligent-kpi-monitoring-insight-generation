@@ -151,7 +151,7 @@ with right:
         st.write(f"**{metric_name}** triggered a **{chosen['severity']}** alert on **{alert_date.date()}** "
                  f"({chosen['method']}). Direction: **{direction}**.")
 
-       st.markdown("### Evidence")
+    st.markdown("### Evidence")
 
     evidence = {
     "Current period": f"{cur_start.date()} → {cur_end.date()}",
