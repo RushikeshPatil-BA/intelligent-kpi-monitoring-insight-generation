@@ -151,18 +151,28 @@ with right:
         st.write(f"**{metric_name}** triggered a **{chosen['severity']}** alert on **{alert_date.date()}** "
                  f"({chosen['method']}). Direction: **{direction}**.")
 
-        st.markdown("### Evidence")
-        st.json({
-            "Current period": f"{cur_start.date()} → {cur_end.date()}",
-            "Baseline period": f"{base_start.date()} → {base_end.date()}",
-            "Current value": comp.current_value,
-            "Baseline value": comp.baseline_value,
-            "% change": comp.pct_change,
-            "z_score (if available)": chosen.get("z_score", np.nan),
-            "pct_change (day-level, if available)": chosen.get("pct_change", np.nan),
-            "Agreement (RULES+IFOREST same day/metric)": agreement,
-            "Confidence (0-100)": conf,
-        })
+       st.markdown("### Evidence")
+
+evidence = {
+    "Current period": f"{cur_start.date()} → {cur_end.date()}",
+    "Baseline period": f"{base_start.date()} → {base_end.date()}",
+    "Current value": comp.current_value,
+    "Baseline value": comp.baseline_value,
+    "% change": comp.pct_change,
+    "Agreement (RULES+IFOREST same day/metric)": agreement,
+    "Confidence (0-100)": conf,
+}
+
+z = chosen.get("z_score")
+pct_day = chosen.get("pct_change")
+
+if pd.notna(z):
+    evidence["Z-Score"] = round(float(z), 2)
+
+if pd.notna(pct_day):
+    evidence["Daily % Change"] = f"{float(pct_day):.2%}"
+
+st.json(evidence)
 
         st.markdown("### Likely drivers")
         if metric_name in ["Revenue", "Orders", "CAC Proxy"]:
