@@ -10,6 +10,7 @@ st.set_page_config(
     page_title="AI-Powered KPI Intelligence Assistant",
     layout="wide"
 )
+st.title("AI-Powered KPI Intelligence Assistant")
 st.caption(
     "AI-driven anomaly detection, business insight generation and decision support for SMEs."
 )
