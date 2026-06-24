@@ -191,23 +191,22 @@ with right:
                  f"({chosen['method']}). Direction: **{direction}**.")
 
         c1, c2 = st.columns(2)
+        c1.metric(
+        "AI Confidence Score",
+        f"{conf}%"
+        )
 
-c1.metric(
-    "AI Confidence Score",
-    f"{conf}%"
-)
-
-if conf >= 80:
-    risk = "High Confidence"
-elif conf >= 60:
-    risk = "Medium Confidence"
-else:
-    risk = "Low Confidence"
-
-c2.metric(
-    "AI Risk Assessment",
-    risk
-)
+        if conf >= 80:
+        risk = "High Confidence"
+        elif conf >= 60:
+        risk = "Medium Confidence"
+        else:
+        risk = "Low Confidence"
+        
+        c2.metric(
+        "AI Risk Assessment",
+         risk
+        )
 
         st.markdown("### Evidence")
         st.json({
