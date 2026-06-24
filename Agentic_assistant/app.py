@@ -6,7 +6,7 @@ import streamlit as st
 from datetime import timedelta
 from src.analytics import compare_periods, channel_contribution, confidence_score, find_method_agreement
 
-## st.set_page_config(page_title="Intelligent KPI Monitoring and Insight Generation System for SMEs", layout="wide")
+# st.set_page_config(page_title="Intelligent KPI Monitoring and Insight Generation System for SMEs", layout="wide")
 st.title("AI-Powered KPI Intelligence Assistant")
 st.caption(
     "AI-driven anomaly detection, business insight generation and decision support for SMEs."
@@ -80,8 +80,8 @@ METRIC_MAP = {
     "Avg Shipping Days": "avg_shipping_days",
 }
 
-st.title("Insight-to-Action Assistant")
-st.caption("Alert-driven assistant: Summary → Evidence → Drivers → Actions → Confidence.")
+# st.title("Insight-to-Action Assistant")
+# st.caption("Alert-driven assistant: Summary → Evidence → Drivers → Actions → Confidence.")
 
 with st.sidebar:
     st.header("Filters")
