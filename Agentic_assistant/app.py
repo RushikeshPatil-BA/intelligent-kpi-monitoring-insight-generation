@@ -6,7 +6,6 @@ import streamlit as st
 from datetime import timedelta
 from src.analytics import compare_periods, channel_contribution, confidence_score, find_method_agreement
 
-# st.set_page_config(page_title="Intelligent KPI Monitoring and Insight Generation System for SMEs", layout="wide")
 st.title("AI-Powered KPI Intelligence Assistant")
 st.caption(
     "AI-driven anomaly detection, business insight generation and decision support for SMEs."
@@ -79,9 +78,6 @@ METRIC_MAP = {
     "CAC Proxy": "cac_proxy",
     "Avg Shipping Days": "avg_shipping_days",
 }
-
-# st.title("Insight-to-Action Assistant")
-# st.caption("Alert-driven assistant: Summary → Evidence → Drivers → Actions → Confidence.")
 
 with st.sidebar:
     st.header("Filters")
@@ -193,6 +189,25 @@ with right:
         st.markdown("### What happened")
         st.write(f"**{metric_name}** triggered a **{chosen['severity']}** alert on **{alert_date.date()}** "
                  f"({chosen['method']}). Direction: **{direction}**.")
+
+        c1, c2 = st.columns(2)
+
+c1.metric(
+    "AI Confidence Score",
+    f"{conf}%"
+)
+
+if conf >= 80:
+    risk = "High Confidence"
+elif conf >= 60:
+    risk = "Medium Confidence"
+else:
+    risk = "Low Confidence"
+
+c2.metric(
+    "AI Risk Assessment",
+    risk
+)
 
         st.markdown("### Evidence")
         st.json({
