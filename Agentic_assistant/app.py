@@ -6,7 +6,11 @@ import streamlit as st
 from datetime import timedelta
 from src.analytics import compare_periods, channel_contribution, confidence_score, find_method_agreement
 
-st.set_page_config(page_title="Insight-to-Action Assistant", layout="wide")
+## st.set_page_config(page_title="Intelligent KPI Monitoring and Insight Generation System for SMEs", layout="wide")
+st.title("AI-Powered KPI Intelligence Assistant")
+st.caption(
+    "AI-driven anomaly detection, business insight generation and decision support for SMEs."
+)
 
 # ---- UPDATED ----
 PROJECT_ROOT = os.path.dirname(
@@ -107,7 +111,7 @@ alerts_view = alerts[
 left, right = st.columns([1.25, 1])
 
 with left:
-    st.subheader("Alert Summary")
+    st.subheader("AI Monitoring Dashboard")
 
     c1, c2, c3, c4 = st.columns(4)
 
@@ -160,7 +164,7 @@ if len(alerts_view) > 0:
     chosen = alerts_view.loc[chosen_idx]
 
 with right:
-    st.subheader("Generated Insight")
+    st.subheader("AI Generated Business Insight")
     if chosen is None:
         st.warning("No alerts found for the selected filters.")
     else:
@@ -203,7 +207,7 @@ with right:
             "Confidence (0-100)": conf,
         })
 
-        st.markdown("### Likely drivers")
+        st.markdown("### AI Drivers Analysis")
         if metric_name in ["Revenue", "Orders", "CAC Proxy"]:
             target = "revenue" if metric_name == "Revenue" else "orders"
             drivers = channel_contribution(ch, target, cur_start, cur_end, base_start, base_end).head(top_n)
@@ -227,7 +231,7 @@ with right:
         st.markdown("---")
         st.caption("Evidence-based prototype: uses gold tables + alert log and only pre-approved actions.")
         
-        st.markdown("## Model Evaluation Results")
+        st.markdown("## AI Performace Evaluation")
         col1, col2, col3 = st.columns(3)
         col1.metric("Best Precision", round(results_df["Precision"].max(), 2))
         col2.metric("Best Recall", round(results_df["Recall"].max(), 2))
