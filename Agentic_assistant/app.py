@@ -107,7 +107,7 @@ alerts_view = alerts[
     (alerts["metric"].isin([metric_label, "MULTI-METRIC"]))
 ].copy()
 
-left, right = st.columns([1.25, 2])
+left, right = st.columns([2.25, 2])
 
 with left:
     st.subheader("AI Monitoring Dashboard")
