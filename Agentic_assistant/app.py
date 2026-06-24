@@ -217,7 +217,7 @@ with right:
             st.write("Driver breakdown is implemented for channel-based metrics (Revenue/Orders/CAC). "
                      "You can extend to category drivers using gold_weekly_category_kpis in the next iteration.")
 
-        st.markdown("### Recommended actions (Action Library)")
+        st.markdown("### Recommended actions by AI")
         recs = actions[(actions["metric"]==metric_name) & (actions["direction"]==direction)]
         if len(recs)==0:
             st.info("No matching action rule found. Add it to docs/action_library.csv.")
