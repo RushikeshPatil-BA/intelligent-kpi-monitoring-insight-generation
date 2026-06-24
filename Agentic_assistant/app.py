@@ -190,22 +190,22 @@ with right:
         st.write(f"**{metric_name}** triggered a **{chosen['severity']}** alert on **{alert_date.date()}** "
                  f"({chosen['method']}). Direction: **{direction}**.")
 
-        c1, c2 = st.columns(2)
-        c1.metric(
-        "AI Confidence Score",
-        f"{conf}%"
-        )
+#        c1, c2 = st.columns(2)
+#        c1.metric(
+#       "AI Confidence Score",
+#        f"{conf}%"
+#        )
 
-    if conf >= 80:
-        risk = "High Confidence"
-    elif conf >= 60:
-        risk = "Medium Confidence"
-    else:
-        risk = "Low Confidence"
-        c2.metric(
-        "AI Risk Assessment",
-         risk
-        )
+#    if conf >= 80:
+#        risk = "High Confidence"
+ #   elif conf >= 60:
+  #      risk = "Medium Confidence"
+   # else:
+    #    risk = "Low Confidence"
+     #   c2.metric(
+      #  "AI Risk Assessment",
+       #  risk
+        #)
 
         st.markdown("### Evidence")
         st.json({
