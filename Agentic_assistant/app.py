@@ -6,7 +6,10 @@ import streamlit as st
 from datetime import timedelta
 from src.analytics import compare_periods, channel_contribution, confidence_score, find_method_agreement
 
-st.title("AI-Powered KPI Intelligence Assistant")
+st.set_page_config(
+    page_title="AI-Powered KPI Intelligence Assistant",
+    layout="wide"
+)
 st.caption(
     "AI-driven anomaly detection, business insight generation and decision support for SMEs."
 )
@@ -104,7 +107,7 @@ alerts_view = alerts[
     (alerts["metric"].isin([metric_label, "MULTI-METRIC"]))
 ].copy()
 
-left, right = st.columns([1.25, 1])
+left, right = st.columns([1.25, 2])
 
 with left:
     st.subheader("AI Monitoring Dashboard")
