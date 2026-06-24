@@ -196,13 +196,12 @@ with right:
         f"{conf}%"
         )
 
-        if conf >= 80:
+    if conf >= 80:
         risk = "High Confidence"
-        elif conf >= 60:
+    elif conf >= 60:
         risk = "Medium Confidence"
-        else:
+    else:
         risk = "Low Confidence"
-        
         c2.metric(
         "AI Risk Assessment",
          risk
