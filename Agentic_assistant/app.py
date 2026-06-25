@@ -249,6 +249,15 @@ with right:
             st.write("Driver breakdown is implemented for channel-based metrics (Revenue/Orders/CAC). "
                      "You can extend to category drivers using gold_weekly_category_kpis in the next iteration.")
 
+        st.markdown("### Why did the AI flag this?")
+        st.write(
+            """
+            The anomaly was detected using a hybrid framework combining
+            statistical thresholds and Isolation Forest machine learning.
+            The KPI behaviour deviated significantly from its historical baseline.
+            """
+        )
+        
         st.markdown("### Recommended actions by AI")
         recs = actions[(actions["metric"]==metric_name) & (actions["direction"]==direction)]
         if len(recs)==0:
