@@ -255,9 +255,9 @@ with left:
     st.dataframe(
         alerts_view[
             ["date","metric","severity","method"]
-        ].head(50),
+        ].head(65),
         use_container_width=True,
-        height=2000
+        height=2200
     )
 
     st.info("Select an alert below to generate insights and recommendations.")
