@@ -53,13 +53,45 @@ st.markdown("""
     margin-bottom:12px;
 }
 
+/* ===============================
+   Reduce Heading Spacing
+================================ */
+
+h1{
+    margin-top:0px !important;
+    margin-bottom:8px !important;
+}
+
+h2{
+    margin-top:8px !important;
+    margin-bottom:8px !important;
+}
+
+h3{
+    margin-top:6px !important;
+    margin-bottom:6px !important;
+}
+
+h4{
+    margin-top:4px !important;
+    margin-bottom:4px !important;
+}
+
+hr{
+    margin-top:8px !important;
+    margin-bottom:12px !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
-st.title("AI-Powered KPI Intelligence Assistant")
-st.caption(
-    "AI-driven anomaly detection, business insight generation and decision support for SMEs."
-)
+st.markdown("""
+<h1 style='margin-bottom:5px;'>
+AI-Powered KPI Intelligence Assistant
+</h1>
+""", unsafe_allow_html=True)
+
+st.caption("AI-driven anomaly detection, business insight generation and decision support for SMEs.")
 
 st.markdown(""" 
 ### Welcome to the AI-Powered KPI Intelligence Assistant
@@ -196,8 +228,11 @@ left, right = st.columns([2.25, 2])
 # 10. AI MONITORING DASHBOARD
 # ============================================================
 with left:
-    st.markdown("## AI Monitoring Dashboard")
-    st.divider()
+    st.markdown("""AI Monitoring Dashboard)
+<h2 style="margin-bottom:4px;">
+AI Monitoring Dashboard
+</h2>
+""", unsafe_allow_html=True)
 
     c1, c2, c3, c4 = st.columns(4)
 
