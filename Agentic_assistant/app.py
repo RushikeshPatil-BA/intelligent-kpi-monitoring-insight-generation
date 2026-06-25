@@ -15,6 +15,49 @@ st.set_page_config(
     page_title="AI-Powered KPI Intelligence Assistant",
     layout="wide"
 )
+st.markdown("""
+<style>
+
+/* Card Design */
+.ai-card{
+    border:1px solid #d9d9d9;
+    border-radius:12px;
+    padding:20px;
+    margin-top:10px;
+    margin-bottom:15px;
+    background-color:white;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Section Title */
+.ai-title{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+/* Subtitle */
+.ai-subtitle{
+    color:#666666;
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+/* Small labels */
+.ai-label{
+    font-weight:600;
+}
+
+/* Divider */
+.ai-divider{
+    border-top:1px solid #e6e6e6;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 st.title("AI-Powered KPI Intelligence Assistant")
 st.caption(
     "AI-driven anomaly detection, business insight generation and decision support for SMEs."
