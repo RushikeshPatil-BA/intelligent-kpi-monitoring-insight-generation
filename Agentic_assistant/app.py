@@ -259,7 +259,8 @@ with right:
             "MEDIUM": "🟡",
             "LOW": "🟢"
         }.get(chosen["severity"], "🔵")
-        st.success(
+       
+        st.markdown(
             f"""
             ### AI Analysis Complete         
             ** - KPI Analysed:** {metric_name}
