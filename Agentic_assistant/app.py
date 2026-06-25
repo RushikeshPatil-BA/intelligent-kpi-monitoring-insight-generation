@@ -333,7 +333,12 @@ with right:
         )
         
         st.markdown("## AI Executive Brief")
-        st.divider()
+        <h2 style="margin-bottom:4px;">
+AI Monitoring Dashboard
+</h2>
+""", unsafe_allow_html=True)
+
+st.divider()
         severity_icon = {
             "HIGH":"🔴",
             "MEDIUM":"🟡",
