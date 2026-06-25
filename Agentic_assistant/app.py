@@ -1,4 +1,6 @@
-\
+#============================================================
+# 1. IMPORT LIBRARIES
+#============================================================
 import os
 import pandas as pd
 import numpy as np
@@ -6,6 +8,9 @@ import streamlit as st
 from datetime import timedelta
 from src.analytics import compare_periods, channel_contribution, confidence_score, find_method_agreement
 
+# ============================================================
+# 2. PAGE CONFIGURATION
+============================================================
 st.set_page_config(
     page_title="AI-Powered KPI Intelligence Assistant",
     layout="wide"
@@ -15,13 +20,34 @@ st.caption(
     "AI-driven anomaly detection, business insight generation and decision support for SMEs."
 )
 
-# ---- UPDATED ----
+st.info(""" 
+### Welcome to the AI-Powered KPI Intelligence Assistant
+This intelligent decision-support system helps SMEs automatically:
+- Monitor KPIs in real time
+- Detect business anomalies using Hybrid AI
+- Explain why anomalies occurred
+- Identify business drivers
+- Recommend evidence-based actions
+
+Built using: 
+- Rule-Based Analytics
+- Isolation Forest Machine Learning
+- Hybrid AI Decision Engine
+- Explainable AI (XAI)
+""")
+
+# ============================================================
+# 3. PROJECT PATHS
+# ============================================================
 PROJECT_ROOT = os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))
 )
 GOLD_DIR = os.path.join(PROJECT_ROOT, "data_gold")
 DOCS_DIR = os.path.join(PROJECT_ROOT, "docs")
 
+# ============================================================
+# 4. LOAD DATA
+# ============================================================
 @st.cache_data
 def load_data():
     daily = pd.read_csv(os.path.join(GOLD_DIR, "gold_daily_kpis.csv"))
@@ -44,6 +70,9 @@ daily, ch, alerts, actions = load_data()
 # ---- Evaluation Setup ----
 from sklearn.metrics import precision_score, recall_score, f1_score
 
+# ============================================================
+# 5. MODEL PERFORMANCE EVALUATION
+# ============================================================
 df_eval = alerts.copy()
 
 # Create ground truth
@@ -73,6 +102,9 @@ results = [
 
 results_df = pd.DataFrame(results)
 
+# ============================================================
+# 6. KPI CONFIGURATION
+# ============================================================
 METRIC_MAP = {
     "Revenue": "revenue",
     "Orders": "orders",
@@ -83,6 +115,9 @@ METRIC_MAP = {
     "Avg Shipping Days": "avg_shipping_days",
 }
 
+# ============================================================
+# 7. USER FILTERS
+# ============================================================
 with st.sidebar:
     st.header("Filters")
     metric_name = st.selectbox("Metric", list(METRIC_MAP.keys()))
@@ -96,6 +131,9 @@ with st.sidebar:
     baseline_days = st.slider("Baseline window (days)", min_value=7, max_value=28, value=7, step=7)
     top_n = st.slider("Top drivers", min_value=3, max_value=10, value=5)
 
+# ============================================================
+# 8. FILTER ALERT DATA
+# ============================================================
 start_date, end_date = pd.to_datetime(dr[0]), pd.to_datetime(dr[1])
 
 metric_label = metric_name
@@ -108,8 +146,14 @@ alerts_view = alerts[
     (alerts["metric"].isin([metric_label, "MULTI-METRIC"]))
 ].copy()
 
+# ============================================================
+# 9. DASHBOARD LAYOUT
+# ============================================================
 left, right = st.columns([2.25, 2])
 
+# ============================================================
+# 10. AI MONITORING DASHBOARD
+# ============================================================
 with left:
     st.subheader("AI Monitoring Dashboard")
 
@@ -148,6 +192,10 @@ with left:
     )
 
     st.info("Select an alert below to generate insights and recommendations.")
+
+# ============================================================
+# 11. ALERT SELECTION
+# ============================================================
 chosen = None
 
 if len(alerts_view) > 0:
@@ -163,6 +211,9 @@ if len(alerts_view) > 0:
 
     chosen = alerts_view.loc[chosen_idx]
 
+# ============================================================
+# 12. AI BUSINESS INSIGHT ENGINE
+# ============================================================
 with right:
     st.subheader("AI Generated Business Insight")
     if chosen is None:
@@ -211,18 +262,18 @@ with right:
         st.success(
             f"""
             ### AI Analysis Complete         
-            **KPI Analysed:** {metric_name}
+            ** - KPI Analysed:** {metric_name}
             
-            **Alert Severity:** {chosen['severity']} {severity_icon}
+            ** - Alert Severity:** {chosen['severity']} {severity_icon}
             
-            **Performance Trend:** {direction}
+            ** - Performance Trend:** {direction}
             
-            **AI Detection Model:** {chosen['method']}
+            ** - AI Detection Model:** {chosen['method']}
             
-            **AI Confidence:** {conf}%
+            ** - AI Confidence:** {conf}%
             
             **Business Recommendation:**
-            Review the KPI trend, analyse contributing drivers, and implement the AI-generated recommendations below to minimise business impact.
+            - Review the KPI trend, analyse contributing drivers, and implement the AI-generated recommendations below to minimise business impact.
             """
         )
         
@@ -278,4 +329,3 @@ with right:
         col2.metric("Best Recall", round(results_df["Recall"].max(), 2))
         col3.metric("Best F1 Score", round(results_df["F1 Score"].max(), 2))
         st.dataframe(results_df)
-
