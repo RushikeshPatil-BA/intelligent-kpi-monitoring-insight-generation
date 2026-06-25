@@ -263,15 +263,11 @@ with right:
         st.markdown(
             f"""
             ### AI Analysis Complete         
-            ** - KPI Analysed:** {metric_name}
-            
-            ** - Alert Severity:** {chosen['severity']} {severity_icon}
-            
-            ** - Performance Trend:** {direction}
-            
-            ** - AI Detection Model:** {chosen['method']}
-            
-            ** - AI Confidence:** {conf}%
+            - KPI Analysed: {metric_name}
+            - Alert Severity: {chosen['severity']} {severity_icon}        
+            - Performance Trend: {direction}
+            - AI Detection Model: {chosen['method']}
+            - AI Confidence: {conf}%
             
             **Business Recommendation:**
             - Review the KPI trend, analyse contributing drivers, and implement the AI-generated recommendations below to minimise business impact.
