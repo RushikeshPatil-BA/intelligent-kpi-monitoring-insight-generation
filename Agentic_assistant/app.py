@@ -257,6 +257,7 @@ with left:
             ["date","metric","severity","method"]
         ].head(30),
         use_container_width=True
+        height=600
     )
 
     st.info("Select an alert below to generate insights and recommendations.")
