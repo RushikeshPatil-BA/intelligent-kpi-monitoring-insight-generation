@@ -23,7 +23,7 @@ st.markdown("""
 ================================ */
 
 .ai-card{
-    border-left:6px solid #2E86DE;
+    border-left:7px solid #2E86DE;
     border-radius:12px;
     padding:20px;
     background:transparent;
@@ -305,7 +305,7 @@ with right:
 <div class="ai-card">
 
 <div class="ai-title">
-🧠 AI Executive Summary
+AI Executive Summary
 </div>
 
 <div class="ai-subtitle">
