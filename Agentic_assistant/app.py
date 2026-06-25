@@ -201,24 +201,19 @@ with right:
         st.line_chart(
             trend_df.set_index("date")
         )
-
-        st.info(
+        
+        st.success(
             f"""
-            AI Executive Summary
-            
-            • KPI: {metric_name}
-            
-            • Direction: {direction}
-            
-            • Severity: {chosen['severity']}
-            
-            • Confidence Score: {conf}%
-            
-            • Detection Method: {chosen['method']}
-            
-            • Recommendation: Review AI-generated actions below.
+            ## 🤖 AI Business Summary
+            **AI Status:** Analysis Completed
+            **KPI Analysed:** {metric_name}
+            **Alert Severity:** {chosen['severity']}
+            **Performance Direction:** {direction}
+            **Detection Engine:** {chosen['method']}
+            **AI Confidence Score:** {conf}%
+            **Business Impact:** Review the KPI trend and AI recommendations to minimise potential business risk.
             """
-          )
+        )
         
         st.markdown("### Evidence")
         st.json({
