@@ -298,24 +298,46 @@ with right:
         
         st.markdown("## AI Executive Brief")
         severity_icon = {
-            "HIGH": "🔴",
-            "MEDIUM": "🟡",
-            "LOW": "🟢"
-        }.get(chosen["severity"], "🔵")
-       
-        st.markdown(
-            f"""
-            ### AI Analysis Complete         
-            - KPI Analysed: {metric_name}
-            - Alert Severity: {chosen['severity']} {severity_icon}        
-            - Performance Trend: {direction}
-            - AI Detection Model: {chosen['method']}
-            - AI Confidence: {conf}%
-            
-            **Business Recommendation:**
-            - Review the KPI trend, analyse contributing drivers, and implement the AI-generated recommendations below to minimise business impact.
-            """
-        )
+            "HIGH":"🔴",
+            "MEDIUM":"🟡",
+            "LOW":"🟢"
+        }.get(chosen["severity"],"🔵")
+        
+        st.markdown(f"""
+        <div class="ai-card">
+        <div class="ai-title">
+        
+        AI Executive Summary
+        </div>
+        <div class="ai-subtitle">
+        Hybrid AI analysis completed successfully.
+        </div>
+        
+        <b>KPI Analysed</b><br>
+        {metric_name}
+        
+        <div class="ai-divider"></div>
+        <b>Alert Severity</b><br>
+        {chosen["severity"]} {severity_icon}
+        
+        <div class="ai-divider"></div>
+        <b>Performance Trend</b><br>
+        {direction}
+        
+        <div class="ai-divider"></div>
+        <b>Detection Model</b><br>
+        {chosen["method"]}
+        
+        <div class="ai-divider"></div>
+        <b>AI Confidence</b><br>
+        {conf}%
+        <div class="ai-divider"></div>
+        
+        <b>Business Recommendation</b><br>
+        Review the KPI trend, analyse contributing drivers and implement the AI-generated recommendations below to minimise business impact.
+        
+        </div>
+        """, unsafe_allow_html=True)
         
         st.markdown("### Evidence")
         st.json({
