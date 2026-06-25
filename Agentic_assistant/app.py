@@ -206,10 +206,15 @@ with right:
             f"""
             AI Executive Summary
             • KPI: {metric_name}
+            
             • Direction: {direction}
+            
             • Severity: {chosen['severity']}
+            
             • Confidence Score: {conf}%
+            
             • Detection Method: {chosen['method']}
+            
             • Recommendation: Review AI-generated actions below.
             """
           )
