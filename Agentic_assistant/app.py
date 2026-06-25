@@ -96,8 +96,7 @@ st.markdown("""
 Automatically monitor business KPIs, detect anomalies using Hybrid AI,
 identify performance drivers, and generate evidence-based recommendations
 to support faster and smarter business decisions.
-
-### Core Technologies
+#### Core Technologies
 - Hybrid AI Detection (Rule-Based + Isolation Forest)
 - Explainable AI (XAI)
 - Business Analytics
