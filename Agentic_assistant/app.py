@@ -196,7 +196,8 @@ left, right = st.columns([2.25, 2])
 # 10. AI MONITORING DASHBOARD
 # ============================================================
 with left:
-    st.subheader("AI Monitoring Dashboard")
+    st.markdown("## AI Monitoring Dashboard")
+    st.divider()
 
     c1, c2, c3, c4 = st.columns(4)
 
@@ -256,7 +257,9 @@ if len(alerts_view) > 0:
 # 12. AI BUSINESS INSIGHT ENGINE
 # ============================================================
 with right:
-    st.subheader("AI Generated Business Insight")
+    st.markdown("## AI Generated Business Insight")
+    st.divider()
+    
     if chosen is None:
         st.warning("No alerts found for the selected filters.")
     else:
@@ -294,7 +297,8 @@ with right:
             trend_df.set_index("date")
         )
         
-        st.subheader("  AI Executive Brief")
+        st.markdown("## AI Executive Brief")
+        st.divider()
         severity_icon = {
             "HIGH":"🔴",
             "MEDIUM":"🟡",
