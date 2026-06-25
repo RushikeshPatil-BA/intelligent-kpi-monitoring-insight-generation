@@ -37,7 +37,7 @@ st.markdown("""
 
 /* Subtitle */
 .ai-subtitle{
-    font-size:24px;
+    font-size:20px;
     font-weight:700;
     margin-bottom:10px;
 }
