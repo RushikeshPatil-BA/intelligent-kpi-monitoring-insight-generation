@@ -193,24 +193,16 @@ with right:
         st.markdown("### What happened")
         st.write(f"**{metric_name}** triggered a **{chosen['severity']}** alert on **{alert_date.date()}** "
                  f"({chosen['method']}). Direction: **{direction}**.")
+        st.markdown("### AI KPI Trend Analysis")
+        trend_df = daily[
+        (daily["date"] >= base_start)
+        & (daily["date"] <= cur_end)
+        ][["date", metric_col]]
+        st.line_chart(
+            trend_df.set_index("date")
+        )
 
-#        c1, c2 = st.columns(2)
-#        c1.metric(
-#       "AI Confidence Score",
-#        f"{conf}%"
-#        )
-
-#    if conf >= 80:
-#        risk = "High Confidence"
- #   elif conf >= 60:
-  #      risk = "Medium Confidence"
-   # else:
-    #    risk = "Low Confidence"
-     #   c2.metric(
-      #  "AI Risk Assessment",
-       #  risk
-        #)
-
+        
         st.markdown("### Evidence")
         st.json({
             "Current period": f"{cur_start.date()} → {cur_end.date()}",
