@@ -18,14 +18,18 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* Card Design */
+/* ===============================
+   AI Card Styling
+================================ */
+
 .ai-card{
-    border:1px solid rgba(150,150,150,0.25);
+    border-left:6px solid #2E86DE;
     border-radius:12px;
-    padding:22px;
+    padding:20px;
+    background:transparent;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.08);
     margin-top:15px;
     margin-bottom:20px;
-    background:transparent;
 }
 
 /* Section Title */
@@ -37,21 +41,16 @@ st.markdown("""
 
 /* Subtitle */
 .ai-subtitle{
-    font-size:18px;
-    font-weight:500;
-    margin-bottom:10px;
-}
-
-/* Small labels */
-.ai-label{
-    font-weight:600;
+    font-size:15px;
+    color:#666666;
+    margin-bottom:15px;
 }
 
 /* Divider */
 .ai-divider{
-    border-top:1px solid #e6e6e6;
-    margin-top:15px;
-    margin-bottom:15px;
+    border-top:1px solid #EAEAEA;
+    margin-top:12px;
+    margin-bottom:12px;
 }
 
 </style>
