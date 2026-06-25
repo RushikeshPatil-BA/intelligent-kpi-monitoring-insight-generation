@@ -310,40 +310,36 @@ with right:
 </div>
 
 <div class="ai-subtitle">
-Hybrid AI analysis completed successfully.
+Hybrid AI analysis completed successfully
 </div>
 
-<div class="ai-section">
-<div class="ai-label">📊 KPI Analysed</div>
-<div class="ai-value">{metric_name}</div>
-</div>
+<b>KPI Analysed</b><br>
+{metric_name}
 
-<div class="ai-section">
-<div class="ai-label">🚨 Alert Severity</div>
-<div class="ai-value">{chosen['severity']} {severity_icon}</div>
-</div>
+<div class="ai-divider"></div>
 
-<div class="ai-section">
-<div class="ai-label">📈 Performance Trend</div>
-<div class="ai-value">{direction}</div>
-</div>
+<b>Alert Severity</b><br>
+{chosen['severity']} {severity_icon}
 
-<div class="ai-section">
-<div class="ai-label">🤖 Detection Model</div>
-<div class="ai-value">{chosen['method']}</div>
-</div>
+<div class="ai-divider"></div>
 
-<div class="ai-section">
-<div class="ai-label">🎯 AI Confidence</div>
-<div class="ai-value">{conf}%</div>
-</div>
+<b>Performance Trend</b><br>
+{direction}
 
-<div class="ai-section">
-<div class="ai-label">💼 Business Recommendation</div>
-<div class="ai-value">
+<div class="ai-divider"></div>
+
+<b>Detection Model</b><br>
+{chosen['method']}
+
+<div class="ai-divider"></div>
+
+<b>AI Confidence</b><br>
+{conf}%
+
+<div class="ai-divider"></div>
+
+<b>Business Recommendation</b><br>
 Review the KPI trend, analyse contributing drivers and implement the AI-generated recommendations below.
-</div>
-</div>
 
 </div>
 """, unsafe_allow_html=True)
