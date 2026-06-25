@@ -213,7 +213,7 @@ with right:
             ### AI Analysis Complete         
             **KPI Analysed:** {metric_name}
             
-            ** Alert Severity:** {chosen['severity']} {severity_icon}
+            **Alert Severity:** {chosen['severity']} {severity_icon}
             
             **Performance Trend:** {direction}
             
