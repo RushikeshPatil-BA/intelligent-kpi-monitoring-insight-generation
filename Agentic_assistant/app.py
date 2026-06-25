@@ -228,14 +228,9 @@ left, right = st.columns([2.25, 2])
 # 10. AI MONITORING DASHBOARD
 # ============================================================
 with left:
- st.markdown("## AI Executive Brief")
 
-<h2 style="margin-bottom:4px;">
-AI Monitoring Dashboard
-</h2>
-""", unsafe_allow_html=True)
-
-st.divider()
+    st.markdown("## AI Monitoring Dashboard")
+    st.divider()
 
     c1, c2, c3, c4 = st.columns(4)
 
@@ -336,12 +331,8 @@ with right:
         )
         
         st.markdown("## AI Executive Brief")
-       <h2 style="margin-bottom:4px;">
-AI Executive Brief
-</h2>
-""", unsafe_allow_html=True)
-
-st.markdown("<hr style='margin:6px 0;'>", unsafe_allow_html=True)
+        st.divider()
+        
         severity_icon = {
             "HIGH":"🔴",
             "MEDIUM":"🟡",
