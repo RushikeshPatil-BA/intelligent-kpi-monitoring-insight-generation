@@ -204,14 +204,21 @@ with right:
         
         st.success(
             f"""
-            ## 🤖 AI Business Summary
+            ## AI Business Summary
             **AI Status:** Analysis Completed
+            
             **KPI Analysed:** {metric_name}
+            
             **Alert Severity:** {chosen['severity']}
+            
             **Performance Direction:** {direction}
+            
             **Detection Engine:** {chosen['method']}
+            
             **AI Confidence Score:** {conf}%
+            
             **Business Impact:** Review the KPI trend and AI recommendations to minimise potential business risk.
+            
             """
         )
         
