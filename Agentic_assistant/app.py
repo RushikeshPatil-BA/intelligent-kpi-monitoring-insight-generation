@@ -10,7 +10,7 @@ from src.analytics import compare_periods, channel_contribution, confidence_scor
 
 # ============================================================
 # 2. PAGE CONFIGURATION
-============================================================
+# ============================================================
 st.set_page_config(
     page_title="AI-Powered KPI Intelligence Assistant",
     layout="wide"
