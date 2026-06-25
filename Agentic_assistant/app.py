@@ -211,12 +211,17 @@ with right:
         st.success(
             f"""
             ### AI Analysis Complete         
-            **📊 KPI Analysed:** {metric_name}
+            **KPI Analysed:** {metric_name}
+            
             **{severity_icon} Alert Severity:** {chosen['severity']}
-            **📈 Performance Trend:** {direction}
-            **🧠 AI Detection Model:** {chosen['method']}
-            **🎯 AI Confidence:** {conf}%
-            **💼 Business Recommendation:**
+            
+            **Performance Trend:** {direction}
+            
+            **AI Detection Model:** {chosen['method']}
+            
+            **AI Confidence:** {conf}%
+            
+            **Business Recommendation:**
             Review the KPI trend, analyse contributing drivers, and implement the AI-generated recommendations below to minimise business impact.
             """
         )
