@@ -20,7 +20,7 @@ st.caption(
     "AI-driven anomaly detection, business insight generation and decision support for SMEs."
 )
 
-st.info(""" 
+st.markdown(""" 
 ### Welcome to the AI-Powered KPI Intelligence Assistant
 This intelligent decision-support system helps SMEs automatically:
 - Monitor KPIs in real time
