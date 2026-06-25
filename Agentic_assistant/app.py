@@ -32,14 +32,14 @@ st.markdown("""
 .ai-title{
     font-size:22px;
     font-weight:700;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 /* Subtitle */
 .ai-subtitle{
-    color:#666666;
-    font-size:15px;
-    margin-bottom:20px;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:10px;
 }
 
 /* Small labels */
