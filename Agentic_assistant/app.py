@@ -256,7 +256,7 @@ with left:
         alerts_view[
             ["date","metric","severity","method"]
         ].head(30),
-        use_container_width=True
+        use_container_width=True,
         height=600
     )
 
