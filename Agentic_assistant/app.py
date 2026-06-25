@@ -294,7 +294,7 @@ with right:
             trend_df.set_index("date")
         )
         
-        st.subheader("## AI Executive Brief")
+        st.subheader("  AI Executive Brief")
         severity_icon = {
             "HIGH":"🔴",
             "MEDIUM":"🟡",
