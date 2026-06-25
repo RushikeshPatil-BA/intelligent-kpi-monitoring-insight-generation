@@ -24,7 +24,7 @@ st.markdown("""
 
 .ai-card{
     border-left:7px solid #2E86DE;
-    border-radius:12px;
+    border-radius:14px;
     padding:20px;
     background:transparent;
     box-shadow:0px 4px 12px rgba(0,0,0,0.08);
