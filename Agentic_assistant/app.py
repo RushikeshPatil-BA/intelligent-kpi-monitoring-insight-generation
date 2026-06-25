@@ -91,7 +91,7 @@ AI-Powered KPI Intelligence Assistant
 </h1>
 """, unsafe_allow_html=True)
 
-st.caption("AI-driven anomaly detection, business insight generation and decision support for SMEs.")
+st.caption("#### AI-driven anomaly detection, business insight generation and decision support for SMEs.")
 st.markdown("""
 Automatically monitor business KPIs, detect anomalies using Hybrid AI,
 identify performance drivers, and generate evidence-based recommendations
