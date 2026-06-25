@@ -302,7 +302,7 @@ with right:
             "LOW":"🟢"
         }.get(chosen["severity"],"🔵")
         
-         st.markdown(f"""
+        st.markdown(f"""
        <div class="ai-card">
        
        <div class="ai-title">
