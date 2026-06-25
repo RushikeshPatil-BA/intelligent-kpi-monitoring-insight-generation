@@ -255,7 +255,7 @@ with left:
     st.dataframe(
         alerts_view[
             ["date","metric","severity","method"]
-        ].head(10),
+        ].head(30),
         use_container_width=True
     )
 
