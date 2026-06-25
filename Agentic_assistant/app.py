@@ -202,6 +202,17 @@ with right:
             trend_df.set_index("date")
         )
 
+        st.info(
+            f"""
+            AI Executive Summary
+            • KPI: {metric_name}
+            • Direction: {direction}
+            • Severity: {chosen['severity']}
+            • Confidence Score: {conf}%
+            • Detection Method: {chosen['method']}
+            • Recommendation: Review AI-generated actions below.
+            """
+          )
         
         st.markdown("### Evidence")
         st.json({
