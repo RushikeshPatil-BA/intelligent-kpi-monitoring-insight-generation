@@ -20,13 +20,12 @@ st.markdown("""
 
 /* Card Design */
 .ai-card{
-    border:1px solid #d9d9d9;
+    border:1px solid rgba(150,150,150,0.25);
     border-radius:12px;
-    padding:20px;
-    margin-top:10px;
-    margin-bottom:15px;
-    background-color:white;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    padding:22px;
+    margin-top:15px;
+    margin-bottom:20px;
+    background:transparent;
 }
 
 /* Section Title */
