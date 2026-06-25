@@ -92,21 +92,15 @@ AI-Powered KPI Intelligence Assistant
 """, unsafe_allow_html=True)
 
 st.caption("AI-driven anomaly detection, business insight generation and decision support for SMEs.")
+st.markdown("""
+Automatically monitor business KPIs, detect anomalies using Hybrid AI,
+identify performance drivers, and generate evidence-based recommendations
+to support faster and smarter business decisions.
 
-st.markdown(""" 
-### Welcome to the AI-Powered KPI Intelligence Assistant
-This intelligent decision-support system helps SMEs automatically:
-- Monitor KPIs in real time
-- Detect business anomalies using Hybrid AI
-- Explain why anomalies occurred
-- Identify business drivers
-- Recommend evidence-based actions
-
-Built using: 
-- Rule-Based Analytics
-- Isolation Forest Machine Learning
-- Hybrid AI Decision Engine
+### Core Technologies
+- Hybrid AI Detection (Rule-Based + Isolation Forest)
 - Explainable AI (XAI)
+- Business Analytics
 """)
 
 # ============================================================
