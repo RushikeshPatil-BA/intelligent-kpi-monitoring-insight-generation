@@ -205,6 +205,7 @@ with right:
         st.info(
             f"""
             AI Executive Summary
+            
             • KPI: {metric_name}
             
             • Direction: {direction}
