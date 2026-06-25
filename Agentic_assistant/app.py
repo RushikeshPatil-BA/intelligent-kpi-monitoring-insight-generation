@@ -203,24 +203,23 @@ with right:
         )
         
         st.markdown("## AI Executive Brief")
-        c1, c2 = st.columns(2)
-        with c1:
-            st.metric("KPI", metric_name)
-            st.metric("Alert Level", chosen["severity"])
-            st.metric("Trend", direction)
-        
-        with c2:
-            st.metric("AI Model", chosen["method"])
-            st.metric("Confidence", f"{conf}%")
-            
-        if chosen["severity"] == "HIGH":
-            st.error("🚨 High Priority - Immediate investigation recommended.")
-        
-        elif chosen["severity"] == "MEDIUM":
-            st.warning("⚠ Medium Priority - Review within the next reporting cycle.")
-       
-        else:
-            st.success("✅ Low Priority - Continue monitoring.")
+        severity_icon = {
+            "HIGH": "🔴",
+            "MEDIUM": "🟡",
+            "LOW": "🟢"
+        }.get(chosen["severity"], "🔵")
+        st.success(
+            f"""
+            ### AI Analysis Complete         
+            **📊 KPI Analysed:** {metric_name}
+            **{severity_icon} Alert Severity:** {chosen['severity']}
+            **📈 Performance Trend:** {direction}
+            **🧠 AI Detection Model:** {chosen['method']}
+            **🎯 AI Confidence:** {conf}%
+            **💼 Business Recommendation:**
+            Review the KPI trend, analyse contributing drivers, and implement the AI-generated recommendations below to minimise business impact.
+            """
+        )
         
         st.markdown("### Evidence")
         st.json({
