@@ -256,7 +256,7 @@ with left:
         alerts_view[
             ["date","metric","severity","method"]
         ].head(30),
-        use_container_width=True
+        use_container_width=False
     )
 
     st.info("Select an alert below to generate insights and recommendations.")
