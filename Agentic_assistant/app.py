@@ -202,25 +202,25 @@ with right:
             trend_df.set_index("date")
         )
         
-        st.success(
-            f"""
-            ## AI Business Summary
-            **AI Status:** Analysis Completed
+        st.markdown("## AI Executive Brief")
+        c1, c2 = st.columns(2)
+        with c1:
+            st.metric("KPI", metric_name)
+            st.metric("Alert Level", chosen["severity"])
+            st.metric("Trend", direction)
+        
+        with c2:
+            st.metric("AI Model", chosen["method"])
+            st.metric("Confidence", f"{conf}%")
             
-            **KPI Analysed:** {metric_name}
-            
-            **Alert Severity:** {chosen['severity']}
-            
-            **Performance Direction:** {direction}
-            
-            **Detection Engine:** {chosen['method']}
-            
-            **AI Confidence Score:** {conf}%
-            
-            **Business Impact:** Review the KPI trend and AI recommendations to minimise potential business risk.
-            
-            """
-        )
+        if chosen["severity"] == "HIGH":
+            st.error("🚨 High Priority - Immediate investigation recommended.")
+        
+        elif chosen["severity"] == "MEDIUM":
+            st.warning("⚠ Medium Priority - Review within the next reporting cycle.")
+       
+        else:
+            st.success("✅ Low Priority - Continue monitoring.")
         
         st.markdown("### Evidence")
         st.json({
