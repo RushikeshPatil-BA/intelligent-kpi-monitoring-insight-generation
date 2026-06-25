@@ -23,7 +23,7 @@ st.markdown("""
 ================================ */
 
 .ai-card{
-    border-left:9px solid #2E86DE;
+#    border-left:9px solid #2E86DE;
     border-radius:14px;
     padding:20px;
     background:transparent;
@@ -294,7 +294,7 @@ with right:
             trend_df.set_index("date")
         )
         
-        st.markdown("## AI Executive Brief")
+        st.subheader("## AI Executive Brief")
         severity_icon = {
             "HIGH":"🔴",
             "MEDIUM":"🟡",
